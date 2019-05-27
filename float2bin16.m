@@ -47,6 +47,7 @@ function binary = float2bin16(x, bit_precision)
     sign = 0;
     if x < 0
         sign = 1;
+        x = x*(-1);
     end
     
     [x_base2, dec_exponent] = convert_base2(x);
